@@ -18,10 +18,11 @@ public class Author {
         this.books = books;
     }
 
-    public Author(String firstname, String lastname, int age) {
+    public Author(String firstname, String lastname, int age ,String[] books) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.age = age;
+        this.books = books;
     }
 
     public int getId() {
