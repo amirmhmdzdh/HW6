@@ -34,8 +34,12 @@ public class AuthorService {
 
         Author author = new Author(firstname, lastname, age, books);
         System.out.println(author);
+        int result = authorRepository.save(author);
 
-        authorRepository.save(author);
+        if (result == 1)
+            System.out.println(firstname + " you successfully saveup :) ");
+        else
+            System.out.println(" Eror404 :/ ");
 
     }
 
