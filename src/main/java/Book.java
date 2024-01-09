@@ -12,4 +12,28 @@ public class Book {
         this.publication_year = publication_year;
         this.author = author;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public int getPublication_year() {
+        return publication_year;
+    }
+
+    public void setPublication_year(int publication_year) {
+        this.publication_year = publication_year;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
 }
