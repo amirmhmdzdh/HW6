@@ -13,7 +13,8 @@ public class Menu {
         System.out.println("***** WELCOME *****");
         System.out.println("1-SAVE UP");
         System.out.println("2-LOAD IN");
-        System.out.println("3-EXIT");
+        System.out.println("3-DELETE");
+        System.out.println("4-EXIT");
         System.out.println("Choose your number: ");
         int number = scanner.nextInt();
         scanner.nextLine();
@@ -22,7 +23,8 @@ public class Menu {
 
             case 1 -> saveUp();
             case 2 -> System.out.println("LOAD IN");
-            case 3 -> System.out.println("EXIT");
+            case 3 -> System.out.println("DELETE");
+            case 4 -> System.out.println("EXIT");
         }
     }
 
