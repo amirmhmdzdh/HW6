@@ -47,4 +47,14 @@ public class Author {
     public void setBooks(String[] books) {
         this.books = books;
     }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", age=" + age +
+                ", books=" + Arrays.toString(books) +
+                '}';
+    }
 }
