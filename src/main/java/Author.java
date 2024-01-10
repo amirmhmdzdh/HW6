@@ -1,29 +1,27 @@
-import java.util.Arrays;
-import java.util.UUID;
 
 public class Author {
     private int id;
     private String firstname;
     private String lastname;
     private int age;
-    private String[] books;
+    //private String[] books;
 
     public Author() {
     }
 
-    public Author(int id, String firstname, String lastname, int age, String[] books) {
+    public Author(int id, String firstname, String lastname, int age) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
         this.age = age;
-        this.books = books;
+        //this.books = books;
     }
 
-    public Author(String firstname, String lastname, int age, String[] books) {
+    public Author(String firstname, String lastname, int age) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.age = age;
-        this.books = books;
+        //this.books = books;
     }
 
     public int getId() {
@@ -58,14 +56,6 @@ public class Author {
         this.age = age;
     }
 
-    public String[] getBooks() {
-        return books;
-    }
-
-    public void setBooks(String[] books) {
-        this.books = books;
-    }
-
     @Override
     public String toString() {
         return "Author{" +
@@ -73,7 +63,6 @@ public class Author {
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", age=" + age +
-                ", books=" + Arrays.toString(books) +
                 '}';
     }
 }
