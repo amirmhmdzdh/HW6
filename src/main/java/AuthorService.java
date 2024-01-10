@@ -19,20 +19,20 @@ public class AuthorService {
         System.out.println("please enter your age: ");
         int age = scanner.nextInt();
 
-        System.out.println("Please enter the number of books: ");
-        int numberOfBooks = scanner.nextInt();
-        scanner.nextLine();
+//        System.out.println("Please enter the number of books: ");
+//        int numberOfBooks = scanner.nextInt();
+//        scanner.nextLine();
+//
+//        String[] books = new String[numberOfBooks];
+//
+//        for (int i = 0; i < numberOfBooks; i++) {
+//            System.out.println("Please enter the title of book " + (i + 1) + ": ");
+//            String bookTitle = scanner.nextLine();
+//            books[i] = bookTitle;
+//        }
 
-        String[] books = new String[numberOfBooks];
 
-        for (int i = 0; i < numberOfBooks; i++) {
-            System.out.println("Please enter the title of book " + (i + 1) + ": ");
-            String bookTitle = scanner.nextLine();
-            books[i] = bookTitle;
-        }
-
-
-        Author author = new Author(firstname, lastname, age, books);
+        Author author = new Author(firstname, lastname, age);
         System.out.println(author);
         int result = authorRepository.save(author);
 
