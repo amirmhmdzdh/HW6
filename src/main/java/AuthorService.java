@@ -9,7 +9,7 @@ public class AuthorService {
     public AuthorService() throws SQLException {
     }
 
-    public void register() throws SQLException { // نام و خانوادگی و سن
+    public void register() throws SQLException {
         System.out.println("please enter your firstname: ");
         String firstname = scanner.nextLine();
 
@@ -41,6 +41,14 @@ public class AuthorService {
         else
             System.out.println(" Eror404 :/ ");
 
+    }
+
+    public void loadIn() throws SQLException {
+
+        System.out.println("please enter your id: ");
+        int id = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println(authorRepository.load(id));
     }
 
 }

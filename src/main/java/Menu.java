@@ -22,7 +22,7 @@ public class Menu {
         switch (number) {
 
             case 1 -> saveUp();
-            case 2 -> System.out.println("LOAD IN");
+            case 2 -> loadIn();
             case 3 -> System.out.println("DELETE");
             case 4 -> System.out.println("EXIT");
         }
@@ -32,5 +32,8 @@ public class Menu {
         authorService.register();
     }
 
+    public void loadIn() throws SQLException {
+        authorService.loadIn();
+    }
 
 }
