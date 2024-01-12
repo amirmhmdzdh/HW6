@@ -1,8 +1,8 @@
 package service;
-
+import repository.BookRepository;
 import java.sql.SQLException;
 import java.util.Scanner;
-
+import model.Book;
 public class BookService {
     private final Scanner scanner = new Scanner(System.in);
     private final BookRepository bookRepository = new BookRepository();

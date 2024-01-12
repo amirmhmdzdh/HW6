@@ -1,3 +1,7 @@
+package repository;
+
+import model.Book;
+import connection.JdbcConnection;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -58,6 +62,7 @@ public class BookRepository {
 
         if (rowsAffected > 0) {
             return book;
+
         } else {
             return null;
         }

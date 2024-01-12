@@ -1,8 +1,12 @@
+package repository;
+
+import model.Author;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+import connection.JdbcConnection;
 public class AuthorRepository {
 
     private final JdbcConnection jdbcConnection = new JdbcConnection();

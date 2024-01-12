@@ -1,3 +1,4 @@
+package model;
 
 public class Author {
     private int id;
@@ -58,7 +59,7 @@ public class Author {
 
     @Override
     public String toString() {
-        return "Author{" +
+        return "model.Author{" +
                 "id=" + id +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +

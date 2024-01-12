@@ -1,8 +1,8 @@
 package service;
-
+import model.Author;
 import java.sql.SQLException;
 import java.util.Scanner;
-
+import repository.AuthorRepository;
 public class AuthorService {
 
     private final Scanner scanner = new Scanner(System.in);
